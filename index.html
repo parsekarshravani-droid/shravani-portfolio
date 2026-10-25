@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Shravani Parsekar — Computer Engineering student & creative developer</title>
+<meta name="description" content="Portfolio of Shravani Parsekar, a Computer Engineering student building web apps and AI projects.">
+<meta property="og:title" content="Shravani Parsekar — Portfolio">
+<meta property="og:description" content="Code, creativity and artificial intelligence.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🧶%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,800&family=Figtree:wght@400;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="loader" aria-hidden="true"><div><b>Shravani Parsekar</b><i></i></div></div>
+<div id="cur" aria-hidden="true"></div>
+<a class="sr" href="#work">Skip to projects</a>
+<header><div class="wrap">
+ <a class="logo" href="#top" aria-label="Shravani Parsekar, home">Shravani Parsekar</a>
+ <nav aria-label="Primary"><button id="menu" aria-expanded="false" aria-controls="nl">Menu</button>
+ <ul id="nl"><span id="pill"></span>
+  <li><a href="#work">Work</a></li><li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li><li><a href="#contact">Contact</a></li></ul></nav>
+</div></header>
+
+<main>
+<section class="hero" id="top">
+ <div class="hero-inner" id="heroInner">
+  <div>
+   <div class="status">Open to internships &amp; collaborations</div>
+   <h1><span><em>Hi, I’m</em></span><span><em>Shravani.</em></span><span><em>I build things</em></span><span><em>that matter.</em></span></h1>
+   <p class="lead">Computer Engineering student exploring the intersection of code, creativity, and artificial intelligence.</p>
+   <div class="cta"><a class="btn mag" href="#work">Explore my work</a><a class="link" href="#contact">Let’s connect</a></div>
+   <p class="hint">Move your cursor over the page and Explore.</p>
+  </div>
+  <figure class="photo" style="margin:0"><img src="photo.jpg" alt="Crocheted doll portrait of Shravani with long dark hair" width="560" height="505"><small>Shravani Parsekar</small></figure>
+ </div>
+ <span class="scroll" aria-hidden="true"></span>
+</section>
+
+<section class="work" id="work"><div class="wrap">
+ <h2>My projects</h2>
+ <div id="projects"></div>
+</div></section>
+
+<section class="about" id="about"><div class="wrap">
+ <h2>Curious by nature.<br>Builder by choice.</h2>
+ <div class="about-grid">
+  <div class="rv">
+   <p>I’m a Computer Engineering student who enjoys turning ideas into useful digital experiences. From experimenting with AI to building full-stack applications, I love learning new technologies and solving problems through code.</p>
+   <p>My approach is simple: understand the problem, build a small working version, then improve it with feedback. I care most about technology people can actually use.</p>
+   <div class="facts" id="facts"></div>
+  </div>
+  <ol class="tl rv" id="tl"></ol>
+ </div>
+</div></section>
+
+<section class="skills" id="skills"><div class="wrap">
+ <h2>Tools I build with</h2>
+ <div class="skgrid" id="sk"></div>
+</div></section>
+
+<section class="lead-sec" id="leadership"><div class="wrap">
+ <h2>Beyond the code</h2>
+ <div class="lead-box rv">
+  <div><h3 style="font-size:2rem">Joint Secretary</h3><p style="margin:.6rem 0 0;color:var(--muted)">Rotaract Club of Borivali Heights · 2025–26</p></div>
+  <div><p>Helping the club run smoothly by coordinating members, keeping communication clear, and supporting service projects in the community.</p>
+  <div class="pills"><span>Teamwork</span><span>Communication</span><span>Coordination</span><span>Community</span></div></div>
+ </div>
+</div></section>
+
+<section class="contact" id="contact"><div class="wrap">
+ <h2>Have an idea?<br>Let’s build it.</h2>
+ <div class="cgrid">
+  <div><a class="mail" id="mail" href="#"></a>
+   <div class="soc" id="soc"></div></div>
+  <form id="f" novalidate>
+   <div><label for="n">Name</label><input id="n" name="n" autocomplete="name" required><span class="err" id="en"></span></div>
+   <div><label for="e">Email</label><input id="e" name="e" type="email" autocomplete="email" required><span class="err" id="ee"></span></div>
+   <div><label for="m">Message</label><textarea id="m" name="m" rows="4" required></textarea><span class="err" id="em"></span></div>
+   <button class="btn mag" type="submit" style="border:0;font:600 1rem var(--b);cursor:pointer;justify-self:start">Send message</button>
+   <p id="st" role="status"></p>
+  </form>
+ </div>
+</div></section>
+</main>
+<footer><div class="wrap"><span>© <span id="yr"></span> Shravani Parsekar</span><span>Designed &amp; built by me.</span></div></footer>
+
+<dialog id="dlg" aria-labelledby="dt"><button class="x" aria-label="Close project details">×</button><div id="dbody"></div></dialog>
+
+<script src="script.js"></script>
+</body>
+</html>
