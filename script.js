@@ -26,7 +26,7 @@ const CONFIG={
    tech:["Python","Flask","scikit-learn","TF-IDF","React.js","Vite","Kaggle Fake and Real News Dataset (ISOT)"],live:"https://fake-news-detectorz.netlify.app/",source:"https://github.com/parsekarshravani-droid/fake-news-detector",dataset: "https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset"},
   {key:"D",title:"Campus Cart",sub:"An OLX for your college",
    desc:"A full-stack, college-exclusive marketplace where students buy and sell textbooks, laptops, bicycles and hostel essentials. Includes search and filters, wishlists, private buyer–seller messaging, a seller dashboard and an admin moderation console.",
-   tech:["React","Vite","Node.js","Express","MongoDB","JWT Auth","Cloudinary","REST API"],live:"https://campus-cartz.netlify.app/",source:"https://github.com/parsekarshravani-droid/campus-cart"}]
+   tech:["React","Vite","Node.js","Express","MongoDB","JWT Auth","REST API"],live:"https://campus-cartz.netlify.app/",source:"https://github.com/parsekarshravani-droid/campus-cart"}]
 };
 /* ================================== */
 const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
