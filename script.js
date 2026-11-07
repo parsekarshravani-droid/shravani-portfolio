@@ -3,15 +3,15 @@ const CONFIG={
  email:"parsekarshravani@gmail.com",          // TODO: replace with your real email
  github:"https://github.com/parsekarshravani-droid",                // e.g. "https://github.com/parsekarshravani-droid"
  linkedin:"https://www.linkedin.com/in/parsekarshravani/",         // e.g. "https://www.linkedin.com/in/parsekarshravani/"
- facts:[["3","featured projects"],["6","skill areas"],["2025–26","Joint Secretary"]],
+ facts:[["4","featured projects"],["6","skill areas"],["2025–26","Joint Secretary"]],
  timeline:[
   ["Foundations","Programming in Python, Java and C++, and the fundamentals of computer engineering."],
-  ["Web development","Frontend with HTML, CSS, JavaScript and React; backend with Flask and Spring Boot."],
+  ["Web development","Frontend with HTML, CSS, JavaScript and React; backend with Flask, Spring Boot and Express."],
   ["AI & machine learning","Exploring NLP and computer vision with scikit-learn and face-api.js."],
   ["Now","Combining all of it into full-stack projects that solve real problems."]],
  skills:{
-  "Programming":["Python","Java","C++"],"Frontend":["HTML","CSS","JavaScript","React"],"Backend":["Flask","Spring Boot"],
-  "Databases":["MySQL","PostgreSQL","Supabase"],"AI / ML":["scikit-learn","NLP","Computer vision","TF-IDF",
+  "Programming":["Python","Java","C++"],"Frontend":["HTML","CSS","JavaScript","React"],"Backend":["Flask","Spring Boot","Node.js & Express"],
+  "Databases":["MySQL","PostgreSQL","Supabase","MongoDB"],"AI / ML":["scikit-learn","NLP","Computer vision","TF-IDF",
   "Logistic Regression",
   "Kaggle Dataset (ISOT)"],"Tools":["Git","GitHub","VS Code","Node.js","npm","Netlify","Render"]},
  projects:[ // Leave live/source empty until you have real links; buttons show as unavailable.
@@ -23,12 +23,16 @@ const CONFIG={
    tech:["JavaScript","face-api.js","HTML","CSS","Vite","Node.js & npm","React"],live:"https://driver-monitor.netlify.app/",source:"https://github.com/parsekarshravani-droid/driver-monitor"},
   {key:"C",title:"Fake News Detection",sub:"NLP text classifier",
    desc:"A machine learning application that classifies news text using natural language processing and displays prediction confidence.",
-   tech:["Python","Flask","scikit-learn","TF-IDF","React.js","Vite","Kaggle Fake and Real News Dataset (ISOT)"],live:"https://fake-news-detectorz.netlify.app/",source:"https://github.com/parsekarshravani-droid/fake-news-detector",dataset: "https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset"}]
+   tech:["Python","Flask","scikit-learn","TF-IDF","React.js","Vite","Kaggle Fake and Real News Dataset (ISOT)"],live:"https://fake-news-detectorz.netlify.app/",source:"https://github.com/parsekarshravani-droid/fake-news-detector",dataset: "https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset"},
+  {key:"D",title:"Campus Cart",sub:"An OLX for your college",
+   desc:"A full-stack, college-exclusive marketplace where students buy and sell textbooks, laptops, bicycles and hostel essentials. Includes search and filters, wishlists, private buyer–seller messaging, a seller dashboard and an admin moderation console.",
+   tech:["React","Vite","Node.js","Express","MongoDB","JWT Auth","Cloudinary","REST API"],live:"https://campus-cartz.netlify.app/",source:"https://github.com/parsekarshravani-droid/campus-cart"}]
 };
 /* ================================== */
 const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
 const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
 const mock={
+ D:`<div class="mockup mD"><div class="mk-top"><b>Campus Cart</b><span>Buy smart. Sell easy.</span></div><div class="mk-grid"><div><i></i><span>Calculator</span><b>₹650</b></div><div><i></i><span>Textbook</span><b>₹250</b></div><div><i></i><span>Bicycle</span><b>₹2,500</b></div></div></div>`,
  A:`<div class="mockup mA"><div class="kpi">₹ 24,380<small>spent this month</small></div><div class="donut"></div><div class="bars"><i style="height:45%"></i><i style="height:70%"></i><i style="height:38%"></i><i style="height:90%"></i><i style="height:60%"></i><i style="height:76%"></i></div></div>`,
  B:`<div class="mockup mB"><div class="face"><div class="eyes"><i></i><i></i></div></div><div class="ear"><i></i></div></div>`,
  C:`<div class="mockup mC"><div class="news"><i></i><i></i><i></i><i style="width:60%"></i><div class="verdict"><span>Likely real</span><span>87%</span></div><div class="meter"><i></i></div></div></div>`};
