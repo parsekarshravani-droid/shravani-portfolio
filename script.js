@@ -24,7 +24,7 @@ const CONFIG={
   {key:"C",title:"Fake News Detection",sub:"NLP text classifier",
    desc:"A machine learning application that classifies news text using natural language processing and displays prediction confidence.",
    tech:["Python","Flask","scikit-learn","TF-IDF","React.js","Vite","Kaggle Fake and Real News Dataset (ISOT)"],live:"https://fake-news-detectorz.netlify.app/",source:"https://github.com/parsekarshravani-droid/fake-news-detector",dataset: "https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset"},
-  {key:"D",title:"Campus Cart",sub:"An OLX for your college",
+  {key:"D",title:"Campus Cart",sub:"A Smart Marketplace Built for College Students",
    desc:"A full-stack, college-exclusive marketplace where students buy and sell textbooks, laptops, bicycles and hostel essentials. Includes search and filters, wishlists, private buyer–seller messaging, a seller dashboard and an admin moderation console.",
    tech:["React","Vite","Node.js","Express","MongoDB","JWT Auth","REST API"],live:"https://campus-cartz.netlify.app/",source:"https://github.com/parsekarshravani-droid/campus-cart"}]
 };
